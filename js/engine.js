@@ -44,7 +44,7 @@ var Engine = (function(global) {
         /* Call our update/render functions, pass along the time delta to
          * our update function since it may be used for smooth animation.
          */
-        update(dt);
+        update(dt); //for now
         render();
 
         /* Set our lastTime variable which is used to determine the time delta
@@ -65,7 +65,7 @@ var Engine = (function(global) {
     function init() {
         reset();
         lastTime = Date.now();
-        main();
+        main(); //for now
     }
 
     /* This function is called by main (our game loop) and itself calls all
@@ -78,8 +78,8 @@ var Engine = (function(global) {
      * on the entities themselves within your app.js file).
      */
     function update(dt) {
-        updateEntities(dt);
-        // checkCollisions();
+        //updateEntities(dt); //for now
+        // checkCollisions();   wasn't done by me
     }
 
     /* This is called by the update function and loops through all of the
@@ -93,7 +93,7 @@ var Engine = (function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-        player.update();
+       player.update(); //for now
     }
 
     /* This function initially draws the "game level", it will then call
@@ -151,9 +151,9 @@ var Engine = (function(global) {
          */
         allEnemies.forEach(function(enemy) {
             enemy.render();
-        });
+        });      //for now
 
-        player.render();
+       player.render();  //for now
     }
 
     /* This function does nothing but it could have been a good place to
