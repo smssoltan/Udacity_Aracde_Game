@@ -19,4 +19,7 @@
 ## General_Idea
     In this project we were to develop the functionality of the arcade game that was given.
     Using Object Oriented Programing principles to create objects, properties, and methods.
-
+    
+ ## Live Link
+    To try this game, you can click on the following link.
+    https://smssoltan.github.io/Udacity_Aracde_Game/
